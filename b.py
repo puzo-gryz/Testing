@@ -14,11 +14,11 @@ def dfs(i0):
                 return False
     return True
 
-n, m = map(int, input().split())
+n, m = 3, 2
 graph = {}
-
+gl = [(1, 2), (2, 3)]
 for i in range(m):
-    b, e = map(int, input().split())
+    b, e = gl[i]
     b -= 1
     e -= 1
     graph[b] = graph.get(b, []) + [e]
